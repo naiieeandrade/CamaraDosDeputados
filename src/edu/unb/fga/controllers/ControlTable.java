@@ -59,7 +59,7 @@ public class ControlTable {
 
     public static ModeloTable filtrarPartidos() {
         ModeloTable tabela = DadosAbertos.getTabelaPartidos();
-        ControleRepeticao<Object[]> dados = new ControleRepeticao<>();
+        ControleDeputadoPartido<Object[]> dados = new ControleDeputadoPartido<>();
         String[] colunas = new String[]{"ID", "Sigla", "Nome"};
 
         try {

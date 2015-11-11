@@ -8,14 +8,14 @@ import javax.swing.table.TableRowSorter;
 import edu.unb.fga.models.ModeloTable;
 import edu.unb.fga.models.DeputadoModel;
 
-public class PartidosView extends javax.swing.JFrame {
+public class TabPartidosView extends javax.swing.JFrame {
 
     private DeputadoModel modelo = new DeputadoModel();
     private ModeloTable tabelas = ControlTable.filtrarPartidos();
     private TableRowSorter<ModeloTable> sorter;
     List<Deputado> deputados;
 
-    public PartidosView() {
+    public TabPartidosView() {
         initComponents();
         tabela(tabelas);
     }
@@ -140,21 +140,23 @@ public class PartidosView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PartidosView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TabPartidosView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PartidosView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TabPartidosView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PartidosView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TabPartidosView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PartidosView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TabPartidosView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PartidosView().setVisible(true);
+                new TabPartidosView().setVisible(true);
             }
         });
     }

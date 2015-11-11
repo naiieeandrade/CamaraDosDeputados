@@ -3,11 +3,11 @@ package edu.unb.fga.controllers;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ControleRepeticao<T> extends ArrayList<T> {
+public class ControleDeputadoPartido<T> extends ArrayList<T> {
 
     private static final long serialVersionUID = 1L;
 
-    public ControleRepeticao() {
+    public ControleDeputadoPartido() {
         super();
     }
 
